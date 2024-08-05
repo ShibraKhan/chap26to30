@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+// 1. Write a program that takes a positive integer from user &
+// display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+document.write("<h1>Positive Integer</h1>")
+var positiveInteger=prompt("Write positive integer");
+document.write("number:"+' '+positiveInteger+"<br>")
+document.write("Round off value:"+' '+Math.round(positiveInteger)+"<br>");
+document.write("Floor Value:"+' '+Math.floor(positiveInteger)+"<br>");
+document.write("Ceil value:"+' '+Math.ceil(positiveInteger)+"<br>");
+
+// 2. Write a program that takes a negative floating point
+// number from user & display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+document.write("<h1>Negative Integer</h1>")
+
+var negativeInteger=prompt("Write Negative integer");
+document.write("number:"+' '+negativeInteger+"<br>")
+document.write("Round off value:"+' '+Math.round(negativeInteger)+"<br>");
+document.write("Floor Value:"+' '+Math.floor(negativeInteger)+"<br>");
+document.write("Ceil value:"+' '+Math.ceil(negativeInteger)+"<br>");
+
+// 3. Write a program that displays the absolute value of a
+// number.
+// E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+document.write("<h1> Absolute Value</h1>")
+
+var num=-4;
+
+document.write("The absolute value of  "+num+"is "+' '+ Math.abs(num));
+
+// 4. Write a program that simulates a dice using random()
+// method of JS Math class. Display the value of dice in your
+// browser.:
+
+document.write("<h1>Generating number from 1 to 6 in Dice</h1>")
+ var bigDecimal = Math.random();
+ var improvedNum = (bigDecimal * 6) +1;
+ var numberOfDice = Math.floor(improvedNum);
+ document.write("Random Dice Value is:"+' '+numberOfDice);
+
+
+//  5. Write a program that simulates a coin toss using random()
+// method of JS Math class. Display the value of coin in your
+// browser
+
+document.write("<h1>Value of Coin Toss</h1>")
+ var coin = Math.random();
+ var improvedNum = (coin * 2) +1;
+ var coinToss = Math.floor(improvedNum);
+ document.write("Coin toss value is:"+' '+coinToss+"<br>");
+
+
+//  6. Write a program that shows a random number between 1
+// and 100 in your browser.
+var randomNumber=Math.random();
+var improvedNum=(randomNumber*100)+1;
+var randomNum1to100=Math.floor(improvedNum);
+document.write("The random number between 1 to 100 is:"+' '+randomNum1to100+"<br>");
+
+
+
+// //  // Generate a random number between 1 and 100
+//  var randomNumber = Math.floor(Math.random() * 100) + 1;
+
+// // // Display the result
+// document.write("Random number between 1 and 100: " + randomNumber);
+
+
+
+// 7. Write a program that asks the user about his weight. Parse
+// the user input and display his weight in your browser.
+// Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+document.write("<h1>Weight</h1>")
+
+
+var userInput=prompt("Enter your weight ");
+var  parseValue=parseFloat(userInput);
+document.write("The weight of user is :"+' '+parseValue+' '+"Kilograms"+"<br>");
+
+
+// 8. Write a program that stores a random secret number from
+// 1 to 10 in a variable. Ask the user to input a number
+// between 1 and 10. If the user input equals the secret
+// number, congratulate the user.
+  // Generate a random secret number between 1 and 10
+
+
+  document.write("<h1>Secret Number</h1>")
+
+  var secretNumber = Math.floor(Math.random() * 10) + 1;
+
+// Ask the user to input a number between 1 and 10
+var userInput = prompt("Guess the secret number (between 1 and 10):");
+
+// Convert the user input to a number
+var userNumber = parseInt(userInput);
+
+// Check if the user guessed the secret number
+if (userNumber === secretNumber) {
+    document.write("Congratulations! You guessed the secret number: " + secretNumber);
+} else {
+    document.write("Sorry, the secret number was " + secretNumber + ". Try again!");
+}
+
+    </script> 
+</body>
+</html>
